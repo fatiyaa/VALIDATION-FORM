@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Astronomy Society</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nova+Mono"
+      rel="stylesheet"
+    />
+    <script src="validate.js"></script>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="header">
+        <h1>Astronomy Society</h1>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tech</a></li>
+        <li><a href="#about">Space</a></li>
+        <li><a href="#about">Astronomy</a></li>
+      </ul>
+    </div>
+    <div class="sidebar">
+      <div class="side">
+        <div class="side-top">REGISTRATION</div>
+        <div class="ins">
+          <div class="post-img">
+            <img
+              src="https://i.pinimg.com/564x/45/d2/ca/45d2ca90a81767f1b80b01028da48f17.jpg"
+            />
+          </div>
+          <div class="side-reg">
+            <form
+              name="regis"
+              method="POST"
+              onsubmit="return basicValidation()"
+            >
+              <div class="form-item">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Luke Skywalker"
+                  pattern="[A-Za-z\s]+"
+                />
+              </div>
+              <div class="form-item">
+                <label for="pass">Password</label>
+                <input
+                  type="password"
+                  id="pass"
+                  name="pass"
+                  placeholder="******"
+                />
+              </div>
+              <div class="form-item">
+                <label for="passv">Verify Password</label>
+                <input
+                  type="password"
+                  id="passv"
+                  name="passv"
+                  onkeyup="passCheck()"
+                  placeholder="******"
+                />
+              </div>
+              <div class="form-item">
+                <label for="addr">Address</label>
+                <textarea
+                  id="addr"
+                  name="addr"
+                  cols="30"
+                  placeholder="Galaxy far far away"
+                ></textarea>
+              </div>
+              <div class="form-item">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  onkeyup="emailCheck()"
+                  placeholder="this.is.dummy@email.com"
+                />
+              </div>
+              <div class="form-item">
+                <label for="hp">Telepon</label>
+                <input
+                  type="text"
+                  id="hp"
+                  name="hp"
+                  onkeyup="hpCheck()"
+                  placeholder="10 - 13 numbers"
+                />
+              </div>
+              <div class="form-item">
+                <label for="date">Date of Birth</label>
+                <input type="date" id="date" name="date" />
+              </div>
+              <div class="form-item">
+                <span>Gender</span>
+                <div id="gender">
+                  <div class="right">
+                    <label class="button">
+                      <input name="gender" value="Male" type="radio" />
+                      <span>Male</span>
+                    </label>
+                    <label class="button">
+                      <input name="gender" value="Female" type="radio" />
+                      <span>Female</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="topic">Favorite Topics</label>
+                <select name="topic">
+                  <option name="topic">Spaceflight</option>
+                  <option name="topic">Tech</option>
+                  <option name="topic">Astronomy</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="footer">
+      <div class="container">
+        <p>Fatiya izzati 2023</p>
+      </div>
+    </div> -->
+  </body>
+</html>

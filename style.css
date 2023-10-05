@@ -1,0 +1,222 @@
+body {
+  background: rgb(24, 45, 71);
+  background-image: radial-gradient(#466a97 3%, transparent 4%),
+    radial-gradient(#466a97 3%, transparent 4%);
+  background-size: 15px 15px;
+  color: #c3eaff;
+  font-family: "Nova Mono", sans-serif;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  position: sticky;
+  margin-left: 2.5em;
+  top: 0;
+  z-index: 5;
+}
+
+.menu {
+  background: rgba(22, 33, 47, 0.75);
+  border-bottom: 1px solid #4c5b6d;
+  display: block;
+  height: 120px;
+  line-height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu ul {
+  margin: auto 0;
+  list-style: none;
+}
+
+.menu ul li a {
+  float: left;
+  width: 70px;
+  color: #c3eaff;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: #466a97;
+}
+
+.main {
+  display: flex;
+  padding-top: 30px;
+}
+
+.post-img {
+  grid-column: 1;
+  grid-row: 2/3;
+  border: 0.5px solid #4c5b6d;
+}
+
+.post-img img {
+  max-width: 300px;
+}
+
+.post-desc {
+  grid-column: 2/7;
+  padding: 0.8em 1.2em;
+  border: 0.5px solid #4c5b6d;
+}
+
+.sidebar {
+  width: 50%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.side {
+  display: grid;
+  min-width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
+  /* grid-auto-rows: minmax(50px, auto);
+  grid-auto-columns: minmax(50px, 100px); */
+  border: 1px solid #4c5b6d;
+  margin: auto auto;
+  /* float: left; */
+}
+
+.ins {
+  display: flex;
+  justify-content: space-between;
+}
+.side-top {
+  grid-column: 1/5;
+  grid-row: 1;
+  padding: 0.8em 1.2em;
+  border-bottom: 1px solid #4c5b6d;
+  text-align: center;
+}
+
+.side-reg {
+  display: flex;
+  grid-column: 1/5;
+  margin: 0.8em 4em;
+}
+
+.right {
+  margin-top: -1.5em;
+  text-align: right;
+}
+
+.form-item {
+  margin-bottom: 0.6em;
+  text-align: left;
+}
+
+.form-item label {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 0.2em;
+}
+
+.form-item select {
+  width: 60%;
+  margin-left: 2%;
+  padding: 0.2em;
+}
+
+.form-radio input {
+  display: inline-block;
+  width: 10px;
+}
+
+.button {
+  background-color: rgba(22, 33, 47, 0.25);
+  border: 1px solid #4c5b6d;
+  overflow: auto;
+}
+
+#gender {
+  display: inline;
+}
+
+#gender label {
+  width: 29%;
+  background-color: rgba(22, 33, 47, 0.25);
+  border: 1px solid #4c5b6d;
+  overflow: auto;
+}
+
+#gender label span {
+  text-align: center;
+  padding: 0.2em;
+  display: block;
+}
+
+#gender label input {
+  position: absolute;
+  top: -80px;
+  left: -200px;
+}
+
+#gender input:checked + span {
+  background-color: #466a97;
+  color: #f7f7f7;
+}
+
+#gender .button {
+  background-color: rgba(22, 33, 47, 0.25);
+  border: 1px solid #4c5b6d;
+}
+
+select {
+  background: rgba(22, 33, 47, 0.25);
+  border: 1px solid #4c5b6d;
+  min-height: 25px;
+  color: #c3eaff;
+}
+
+textarea {
+  background: rgba(22, 33, 47, 0.25);
+  border: 1px solid #4c5b6d;
+  color: #c3eaff;
+}
+
+textarea:focus {
+  background: rgba(70, 106, 151, 0.25);
+}
+
+input {
+  background: rgba(22, 33, 47, 0.25);
+  border: 1px solid #4c5b6d;
+  min-height: 25px;
+  color: #c3eaff;
+}
+
+input:focus {
+  background: rgba(70, 106, 151, 0.25);
+}
+
+h4 {
+  font-style: italic;
+}
+
+a:visited,
+a:link,
+a:active {
+  color: #759bc9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: teal;
+}
+
+.prev {
+  display: inline-block;
+  max-width: 450px;
+  margin: 0 1em;
+  text-align: justify;
+}
